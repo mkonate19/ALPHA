@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="{{ request.static_url('alpha:static/alpha.css') }}">
+</head>
+<body>
+    <div class="register-container">
+        <form id="registerForm" action="{{ request.route_url('register') }}" method="post">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="button" onclick="submitForm()">Register</button>
+        </form>
+
+        <script>
+            function submitForm() {
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                var confirmPassword = document.getElementById('confirmPassword').value;
+
+                if (password !== confirmPassword) {
+                    alert("Les mots de passe ne correspondent pas. Veuillez réessayer.");
+                } else {
+                    alert("Inscription réussie!\nEmail: " + email + "\nPassword: " + password);
+                    // Vous pouvez ajouter ici la logique côté serveur pour gérer l'inscription
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
+
