@@ -1,3 +1,66 @@
-<!-- projet/projet/templates/new_home.jinja2 -->
-<h1>{{ title }}</h1>
-<p>{{ content }}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ request.static_url('projet:static/styles.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #555;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        h1, p {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+
+    <nav>
+        <a href="{{ request.route_url('new_home') }}">Home</a>
+        <a href="{{ request.route_url('chat') }}">Chat</a>
+        {% if 'user_authenticated' in request.session %}
+            <a href="{{ request.route_url('logout') }}">Logout</a>
+        {% else %}
+            <a href="{{ request.route_url('login') }}">Login</a>
+        {% endif %}
+    </nav>
+
+    <section>
+        <p>{{ content }}</p>
+    </section>
+</body>
+</html>

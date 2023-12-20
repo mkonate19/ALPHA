@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (autres balises meta et titres) ... -->
+    <link rel="stylesheet" type="text/css" href="{{ request.static_url('projet:static/styles.css') }}">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Hauteur de la fenêtre visible */
+            margin: 0;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        #messages-container {
+            max-height: 300px; /* Hauteur maximale du conteneur des messages */
+            overflow-y: auto; /* Barre de défilement verticale en cas de dépassement de la hauteur */
+            width: 80%; /* Largeur du conteneur des messages */
+        }
+
+        #messages {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #messages li {
+            background-color: #f1f1f1;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            max-width: 70%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 80%; /* Largeur du formulaire */
+        }
+
+        label, input {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    {% include 'navbar.jinja2' %}
+    <h2>Chat Room</h2>
+    <div id="messages-container">
+        <ul id="messages">
+            {% for msg in messages %}
+                <li>{{ msg.user }}: {{ msg.message }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Utilisation de la méthode POST pour soumettre le formulaire -->
+    <form action="{{ request.route_url('chat') }}" method="post">
+        <label for="user_input">User:</label>
+        <input type="text" id="user_input" name="username" required>
+        <label for="message_input">Message:</label>
+        <input type="text" id="message_input" name="message" required>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

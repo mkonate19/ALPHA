@@ -1,3 +1,4 @@
+<!-- login.jinja2 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
     <!-- Ajoutez ici vos liens vers les feuilles de style ou d'autres ressources -->
 </head>
 <body>
-
+{% include 'navbar.jinja2' %}
 <h1>Login</h1>
 
 {% if error_message %}
@@ -22,6 +23,8 @@
 
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required><br>
+
+    <p>Don't have an account? <a href="{{ request.route_url('register') }}">Register here</a>.</p>
 
     <input type="submit" value="Login">
 </form>
