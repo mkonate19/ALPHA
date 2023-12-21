@@ -68,7 +68,7 @@
     <h2>Chat Room</h2>
     <div id="messages-container">
         <ul id="messages">
-            {% for msg in messages %}
+            {% for msg in messages[::-1] %}
                 <li>{{ msg.user }}: {{ msg.message }}</li>
             {% endfor %}
         </ul>
@@ -76,8 +76,7 @@
 
     <!-- Utilisation de la méthode POST pour soumettre le formulaire -->
     <form action="{{ request.route_url('chat') }}" method="post">
-        <label for="user_input">User:</label>
-        <input type="text" id="user_input" name="username" required>
+        
         <label for="message_input">Message:</label>
         <input type="text" id="message_input" name="message" required>
         <button type="submit">Send</button>

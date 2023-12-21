@@ -51,7 +51,7 @@ def write_messages(messages):
     # Sauvegarder la liste mise à jour dans le fichier JSON
     try:
         with open(MESSAGES_JSON_PATH, 'w') as f:
-            json.dump(existing_messages, f)
+            json.dump(messages, f)
         print("Écriture dans le fichier JSON réussie.")
     except Exception as e:
         print(f"Erreur lors de l'écriture dans le fichier JSON : {e}")
@@ -174,6 +174,7 @@ def append_message_to_json(user, message):
 
     # Sauvegarder la liste mise à jour dans le fichier JSON
     write_messages(messages)
+
 
 from pyramid.httpexceptions import HTTPSeeOther
 
