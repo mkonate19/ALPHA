@@ -22,6 +22,15 @@ def read_users():
     return users
 
 def write_users(users):
+    """
+    Écrit les données des utilisateurs dans un fichier JSON.
+
+    Args:
+        users (dict): Un dictionnaire représentant les informations des utilisateurs.
+
+    Exemple:
+        write_users({'user1': {'password': 'pass1'}, 'user2': {'password': 'pass2'}})
+    """
     with open(USERS_JSON_PATH, 'w') as f:
         json.dump(users, f)
 
@@ -31,13 +40,6 @@ def read_messages():
 
     Returns:
         list: Une liste de messages, chaque message étant un dictionnaire.
-
-    Raises:
-        IOError: En cas d'erreur lors de la lecture du fichier.
-
-    Note:
-        Cette fonction lit les messages à partir du fichier spécifié par la variable globale
-        `MESSAGES_JSON_PATH`. Si le fichier n'existe pas, il sera créé avec une liste vide de messages.
 
     Exemple:
         messages = read_messages()
