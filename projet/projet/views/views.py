@@ -26,6 +26,22 @@ def write_users(users):
         json.dump(users, f)
 
 def read_messages():
+    """
+    Lit les messages à partir d'un fichier JSON.
+
+    Returns:
+        list: Une liste de messages, chaque message étant un dictionnaire.
+
+    Raises:
+        IOError: En cas d'erreur lors de la lecture du fichier.
+
+    Note:
+        Cette fonction lit les messages à partir du fichier spécifié par la variable globale
+        `MESSAGES_JSON_PATH`. Si le fichier n'existe pas, il sera créé avec une liste vide de messages.
+
+    Exemple:
+        messages = read_messages()
+    """
     if not os.path.exists(MESSAGES_JSON_PATH):
         # Créer le fichier messages.json s'il n'existe pas
         write_messages([])
