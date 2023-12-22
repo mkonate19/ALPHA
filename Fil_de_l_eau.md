@@ -1,7 +1,7 @@
 Problèmes Identifiés :
 
-Le présent rapport vise à documenter les problèmes identifiés au cours du développement du projet ainsi que les impacts qui nous ont ralenti dans le développement du projet.<br>
-Ces informations sont cruciales pour assurer la transparence de notre processus de développement et la résolution rapide des problèmes rencontrés.
+Le présent rapport vise à documenter les problèmes identifiés au cours du développement du projet ainsi que les impacts qui nous ont ralenti dans le développement du projet.<br><br>
+Ces informations sont cruciales pour assurer la transparence de notre processus de développement et la résolution rapide des problèmes rencontrés.<br><br>
 
 1.	Architecture de la pyramide :
 
