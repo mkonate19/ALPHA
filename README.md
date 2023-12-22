@@ -1,4 +1,5 @@
 Application de Chat avec Pyramid
+
 Description
 Cette application de chat basique a été développée avec le framework Pyramid et le langage de programmation Python. Elle permet aux utilisateurs de s'inscrire, de se connecter, et de participer à un chat en temps réel. Les messages sont stockés dans un fichier JSON pour la persistance des données.
 
