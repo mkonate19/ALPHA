@@ -5,7 +5,7 @@ Le présent rapport vise à documenter les problèmes identifiés au cours du d�
 1.	Architecture de la pyramide :
 
 •	Problème : La structure pyramidale a créé des défis d'intégration et de communication entre les différents niveaux du projet.<br><br>
-•	Impact : Retards dans le développement et la coordination entre les modules.<br>
+•	Impact : Retards dans le développement et la coordination entre les modules.<br><br>
 
 2.	Inscription : Problèmes liés à l’ajout et au stockage des données des utilisateurs :
 
