@@ -120,3 +120,22 @@
 2023-12-21 21:39:45 - Nouveau message de test@gmail.com : test
 2023-12-21 21:39:47 - Page d'accueil visitée par test@gmail.com
 2023-12-21 21:39:48 - Utilisateur déconnecté : test@gmail.com
+2023-12-21 21:45:30 - Utilisateur connecté : Morikekonatekm12@gmail.com
+2023-12-21 21:45:30 - Page d'accueil visitée par Morikekonatekm12@gmail.com
+2023-12-21 21:45:46 - Nouveau message de Morikekonatekm12@gmail.com : Merci chatgpt ! 
+2023-12-21 21:45:51 - Page d'accueil visitée par Morikekonatekm12@gmail.com
+2023-12-21 21:45:53 - Utilisateur déconnecté : Morikekonatekm12@gmail.com
+2023-12-22 11:43:12 - Nouvel utilisateur enregistré : test2@gmail.com
+2023-12-22 11:43:21 - Utilisateur connecté : test2@gmail.com
+2023-12-22 11:43:21 - Page d'accueil visitée par test2@gmail.com
+2023-12-22 11:43:28 - Page d'accueil visitée par test2@gmail.com
+2023-12-22 11:44:03 - Nouveau message de test2@gmail.com : test 1-2 1-2
+2023-12-22 11:44:21 - Page d'accueil visitée par test2@gmail.com
+2023-12-22 11:44:23 - Utilisateur déconnecté : test2@gmail.com
+2023-12-22 11:46:41 - Utilisateur connecté : Morikekonatekm12@gmail.com
+2023-12-22 11:46:41 - Page d'accueil visitée par Morikekonatekm12@gmail.com
+2023-12-22 11:52:32 - Utilisateur déconnecté : Morikekonatekm12@gmail.com
+2023-12-22 12:32:40 - Utilisateur connecté : Morikekonatekm12@gmail.com
+2023-12-22 12:32:40 - Page d'accueil visitée par Morikekonatekm12@gmail.com
+2023-12-22 12:33:30 - Page d'accueil visitée par Morikekonatekm12@gmail.com
+2023-12-22 12:33:43 - Nouveau message de Morikekonatekm12@gmail.com : test2
