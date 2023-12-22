@@ -5,7 +5,7 @@ Ces informations sont cruciales pour assurer la transparence de notre processus 
 
 1.	Architecture de la pyramide :
 
-•	Problème : La structure pyramidale a créé des défis d'intégration et de communication entre les différents niveaux du projet.
+•	Problème : La structure pyramidale a créé des défis d'intégration et de communication entre les différents niveaux du projet.<br>
 •	Impact : Retards dans le développement et la coordination entre les modules.
 
 2.	Inscription : Problèmes liés à l’ajout et au stockage des données des utilisateurs :
